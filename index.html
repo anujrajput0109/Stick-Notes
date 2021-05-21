@@ -27,7 +27,7 @@
           </li>
         </ul>
         <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <input class="form-control me-2" id="searchTxt" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success" type="submit">Search</button>
         </form>
       </div>
@@ -41,7 +41,7 @@
       <div class="card-body">
         <h5 class="card-title">Add a note</h5>
         <div class="form-group">
-          <textarea class="form-control my-3" id=" addTxt" rows="3"></textarea>
+          <textarea class="form-control my-3" id="addTxt" rows="3"></textarea>
         </div>
         <button class="btn btn-primary" id="addBtn">Add Note</button>
       </div>
@@ -49,16 +49,7 @@
 
     <h1>Your Notes</h1>
     <hr>
-    <div id="notes" class="row container-fluid">
-
-      <div class="card mx-2 my-2 noteCard" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">Note</h5>
-          <p class="card-text"></p> 
-          <button class="btn btn-primary">Delete Note</button>
-        </div>
-
-      </div>
+    <div id="notes" class="row container-fluid"></div>
     </div>
   </div>
 
