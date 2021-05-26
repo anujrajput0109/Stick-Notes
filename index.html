@@ -9,9 +9,17 @@
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
   <title>Sticy Notes</title>
+  <style>
+    #bodyStyle{
+      background-color: rgb(136 198 241 / 48%);;
+    }
+    .card-header-color{
+      background-color: #0d6efdbf;
+    }
+  </style>
 </head>
 
-<body>
+<body id="bodyStyle">
   <!-- navbar section start here -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
@@ -36,23 +44,25 @@
   <!-- navbar sectio ends here -->
   <!-- ---------------------------------------------------------------------------------------------- -->
   <div class="container my-3">
-    <h1>welcome to magic notes</h1>
     <div class="card">
-      <div class="card-body">
+      <div class="card-header card-header-color">
+        <h1>welcome to magic notes</h1>
+      </div>
+      <div class="card-body bg-light">
         <h5 class="card-title">Add a note</h5>
         <div class="form-group">
           <textarea class="form-control my-3" id="addTxt" rows="3"></textarea>
         </div>
-        <button class="btn btn-primary" id="addBtn">Add Note</button>
+        <button class="btn btn-outline-primary" id="addBtn">Add Note</button>
       </div>
-    </div>
-
-    <h1>Your Notes</h1>
-    <hr>
-    <div id="notes" class="row container-fluid"></div>
     </div>
   </div>
 
+  <div class="container mt-5">
+    <h1>Your Notes</h1>
+    <hr>
+    <div id="notes" class="row container-fluid"></div>
+  </div>
 
   <!-- ---------------------------------------------------------------------------------- -->
   <!-- bootstrap script files -->

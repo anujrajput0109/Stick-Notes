@@ -32,11 +32,14 @@ function showNotes() {
     let html = "";
     notesObj.forEach(function (element, index) {
         html += `
-            <div class="card mx-2 my-2 noteCard" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Note ${index + 1}</h5>
-                    <p class="card-text"> ${element}</p> 
-                    <button id="${index}" onClick="deleteNode(this.id)" class="btn btn-primary">Delete Note</button>
+            <div class="card mx-auto my-2 noteCard px-0" style="width: 18rem;">
+                <div class="card-header card-header-color">
+                <h5 class="card-title">Note ${index + 1}</h5>
+                </div>
+                <div class="card-body bg-light">
+                    <p class="card-text"> ${element}</p>
+                    <hr>
+                    <button id="${index}" onClick="deleteNode(this.id)" class="btn btn-outline-primary">Delete Note</button>
                 </div>
             </div>
             `;
@@ -87,3 +90,14 @@ search.addEventListener("input",function(){
     })
 
 })
+
+
+
+
+/*
+further features to be added
+1.  Add title
+2. mark a note by user
+3. separate notes by user
+4. sync with server and host
+*/
